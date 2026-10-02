@@ -1,0 +1,35 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Environments ----
+.venv/
+venv/
+.env
+
+# ---- Training artifacts ----
+outputs/
+outputs_*/
+*.pt
+*.pth
+*.ckpt
+wandb/
+runs/
+
+# ---- Data ----
+data/
+*.hdf5
+*.npz
+
+# ---- Local-only ----
+logs/
+*.log
+test_*.py
+
+# ---- Others ----
+.DS_Store
+.idea/
+.vscode/

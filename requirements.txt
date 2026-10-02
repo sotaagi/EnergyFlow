@@ -1,0 +1,10 @@
+torch>=2.1
+numpy
+h5py
+tqdm
+
+robomimic>=0.5.0
+robosuite>=1.5.1
+
+metaworld
+mujoco
