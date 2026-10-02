@@ -81,7 +81,7 @@ python eval_metaworld.py --checkpoint outputs/metaworld_button_press/final.pt \
     --task button_press --n_rollouts 50
 ```
 
-## Reward extraction
+## Reward extraction example
 
 ```python
 import torch
@@ -103,21 +103,6 @@ reward_fn = CenteredReward(model, num_baseline_samples=16, gamma=1e-3)
 r = reward_fn(obs, action)  # [B]
 ```
 
-
-## Results
-
-Success rates (%) reported in the paper.
-
-| RoboMimic (ph) | Lift | Can | Square | Transport | ToolHang | Avg. |
-|---|---|---|---|---|---|---|
-| EnergyFlow | 100.0±0.0 | 100.0±0.0 | 95.3±0.5 | 89.4±1.6 | 84.2±1.4 | 93.8 |
-
-| Meta-World | Button | Drawer | Assembly | Bin | Hammer | Avg. |
-|---|---|---|---|---|---|---|
-| EnergyFlow | 100.0±0.0 | 94.2±1.4 | 82.6±2.8 | 90.9±1.9 | 94.6±1.5 | 92.5 |
-
-See the paper for baselines, the RL experiments, OOD generalization and
-ablations.
 
 ## Citation
 
